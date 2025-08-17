@@ -17,12 +17,10 @@ const items = [
   {
     title: "Home",
     url: "#",
-    icon: Home,
   },
   {
-    title: "Inbox",
-    url: "#",
-    icon: Inbox,
+    title: "Tinnitus Care",
+    url: "#/tinnitus-care",
   },
 ];
 
@@ -36,12 +34,10 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => {
-                const Icon = item.icon;
                 return (
                   <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton asChild>
                       <a href={item.url}>
-                        <Icon />
                         <span>{item.title}</span>
                       </a>
                     </SidebarMenuButton>
