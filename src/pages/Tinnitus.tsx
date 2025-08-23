@@ -5,8 +5,8 @@ const Tinnitus = () => {
   return (
     <div>
       <PageTitle>Tinnitus Care</PageTitle>
-      <FrequencyAudio frequency={1200} />
-      <FrequencyAudio frequency={6500} />
+      <FrequencyAudio initialFrequency={1200} />
+      <FrequencyAudio initialFrequency={6500} />
     </div>
   );
 };

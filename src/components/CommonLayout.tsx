@@ -11,7 +11,9 @@ const CommonLayout = () => {
         <SidebarTrigger />
         <div className={cn("w-[calc(100%-260px)] flex justify-center")}>
           <div
-            className={cn("min-w-[1024px] w-[1024px] h-[calc(100vh)] bg-white")}
+            className={cn(
+              "min-w-[1024px] w-[1024px] h-[calc(100vh)] bg-blue-50"
+            )}
           >
             <Outlet />
           </div>
