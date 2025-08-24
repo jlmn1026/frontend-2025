@@ -32,6 +32,10 @@ const FrequencyAudio = ({ initialFrequency }: Props) => {
     oscillator.start();
     oscillatorRef.current = oscillator;
 
+    oscillatorRef.current.stop();
+    oscillatorRef.current.disconnect();
+    oscillatorRef.current = null;
+
     return () => {
       stopTone();
     };
