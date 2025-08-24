@@ -7,9 +7,9 @@ const CommonLayout = () => {
   return (
     <SidebarProvider>
       <AppSidebar />
-      <main className={cn("w-full flex")}>
+      <main className={cn("w-full min-w-[1024px] flex")}>
         <SidebarTrigger />
-        <div className={cn("w-[calc(100%-260px)] flex justify-center")}>
+        <div className={cn("w-[calc(100%)] flex justify-center")}>
           <div
             className={cn(
               "min-w-[1024px] w-[1024px] h-[calc(100vh)] bg-blue-50"
